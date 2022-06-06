@@ -1,3 +1,14 @@
+:root {
+    --accent-color: #2196F3;
+    --brand-color: #212121;
+    --additional-color: #757575;
+    --backround-color: #2F303A;
+    --fon-color: #FFFFFF;
+    --title-color: #E5E5E5;
+    --subject-color: #F5F4FA;
+    --links-color: rgba(255, 255, 255, 0.6);
+}
+
 body {
     font-family: 'Roboto','Raleway',sans-serif;
 }
@@ -9,7 +20,7 @@ ul {
 }
 
 .page-header{
-    background-color:#FFFFFF;
+    background-color: var(--fon-color);
 }
 
 
@@ -20,44 +31,42 @@ ul {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: #2196F3;
+    color: var(--accent-color);
     text-decoration: none;
 }
 .logo-accent {
     font-family: 'Roboto',sans-serif;
-    color: #212121;
+    color: var(--brand-color);
     text-decoration: none;
 }
 
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .auth-nav .link:hover,
 .auth-nav .link:focus {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .site-nav a {
     text-decoration: none;
-    color: #212121;
+    color: var(--brand-color);
 }
 .auth-nav a {
     text-decoration: none;
-    color:#757575;
+    color: var(--additional-color);
 }
 
 
 /*------------main----------*/
 
 .page-main {
-    background-color: #2F303A;
+    background-color: var(--backround-color);
 }
 .page-main h1 {
-    font-family: 'Roboto',sans-serif;
-        font-style: normal;
         font-weight: 900;
         font-size: 44px;
         line-height: 1,36;
@@ -65,32 +74,35 @@ ul {
         letter-spacing: 0.06em;
         text-transform: uppercase;
     
-        color: #FFFFFF;
+        color: var(--fon-color);
 }
-.page-main button {
-        font-family: "Roboto",sans-serif;
+
+
+.button {
+        font-family: inherit;
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 1,8;
-        display: flex;
-        align-items: center;
-        text-align: center;
         letter-spacing: 0.06em;
         cursor: pointer;
     
-        color: #FFFFFF;
-        background-color: #2196F3;
+        color: var(--fon-color);
+        background-color: var(--accent-color);
+}
 
+.page-main .botton:hover 
+.page-main .button:target {
+    background-color: var(--backround-color);
 }
 
 
 
 .title {
-    background: #E5E5E5;
+    background: var(--title-color);
 }
 
-.title h3 {
+.titles {
     font-family: 'Roboto',sans-serif;
         font-style: normal;
         font-weight: 700;
@@ -99,10 +111,10 @@ ul {
         letter-spacing: 0.03em;
         text-transform: uppercase;
 
-        color: #212121;
+        color: var(--brand-color);
 }
 
-.title p {
+.lead {
     font-family: 'Roboto',sans-serif;
         font-style: normal;
         font-weight: 400;
@@ -110,10 +122,10 @@ ul {
         line-height: 1.7;
         letter-spacing: 0.03em;
     
-        color: #757575;
+        color: var(--additional-color);
 }
 
-.subtitle h2 {
+.subtitles {
     font-family: 'Roboto',sans-serif;
         font-style: normal;
         font-weight: 700;
@@ -122,14 +134,14 @@ ul {
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: #212121;
+        color: var(--brand-color);
 }
 
 .sybtitle {
-    background: #E5E5E5;
+    background: var(--title-color);
 }
 
-.subtitle h3 {
+.name {
     font-family: 'Roboto',sans-serif;
         font-style: normal;
         font-weight: 500;
@@ -138,7 +150,7 @@ ul {
         text-align: center;
         letter-spacing: 0.03em;
 
-        color: #212121;
+        color: var(--brand-color);
 }
 
 .text {
@@ -150,16 +162,16 @@ ul {
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: #757575;
+        color: var(--additional-color);
 }
 
 
 
 .subject {
-    background: #F5F4FA;
+    background: var(--subject-color);
 }
 
-.subject h2 {
+.subjects {
     font-family: 'Roboto',sans-serif;
         font-style: normal;
         font-weight: 700;
@@ -168,7 +180,7 @@ ul {
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: #212121;
+        color: var(--brand-color);
 }
 
 
@@ -178,7 +190,7 @@ ul {
 
 
 .page-footer {
-    background: #2F303A;
+    background: var(--backround-color);
 }
 
 .logo-link {
@@ -189,36 +201,56 @@ ul {
         line-height: 1.19;
         letter-spacing: 0.03em;
     
-        color: #2196F3;
+        color: var(--accent-color);
         text-decoration: none;
 }
 
 .logo-adress {
-    color: #FFFFFF;
+    color: var(--fon-color);
     text-decoration: none;
 }
 
 
-.links a {
-font-family: 'Roboto',sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
 
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-}
 
-.list ul:focus {
+.gps {
+    font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
     
+        color: var(--fon-color);
+        text-decoration: none;
+    }
+
+
+.mails {
+    font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+    
+        color: var(--links-color);
+        text-decoration: none;
+    }
+
+    .tells {
+        font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.7;
+            letter-spacing: 0.03em;
+        
+            color: var(--links-color);
+            text-decoration: none;
+        }
+    
+.list a:hover,
+.list a:focus {
+    color: var(--fon-color);
 }
-
-.links a:hover,
-.links a:focus {
-    color: #FFFFFF;
-}
-
-
-
