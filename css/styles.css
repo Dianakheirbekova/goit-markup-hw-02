@@ -91,10 +91,25 @@ ul {
         background-color: var(--accent-color);
 }
 
-.page-main .botton:hover 
-.page-main .button:target {
+ .botton:hover 
+ .button:target {
     background-color: var(--backround-color);
 }
+
+.buttons {
+    font-family: inherit;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1, 8;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+    
+        color: var(--brand-color);
+        background-color: var(--title-color)
+}
+
+
 
 
 
